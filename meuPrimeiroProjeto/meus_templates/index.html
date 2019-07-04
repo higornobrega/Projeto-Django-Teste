@@ -1,0 +1,16 @@
+<!-- carregar os arquivos estáticos ver em Obs_estaticos-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"><!-- Buscando o arquivo style.css na pasta estaticos -->
+</head>
+<body>
+    <h1 class ="home">Ola Mundo</h1>
+    <img src="{% static 'imagens/foto1.jpg'%}"><!-- Buscando o arquivo foto1 na pasta estaticos -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+A pasta estaticos deve está definida em settings em STATICFILES_DIRS
+E no HTML deve carregar com {% load static %}, chamar css (stile.css) 
+no <head> com  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+e a imagem <img src="{% static 'imagens/foto1.jpg'%}">

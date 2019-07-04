@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ENVIANDO O FORM ({{form}})
+        * form para criar um formulário
+        * action para onde enviar aós clicar em salvar (Da Erro no Update)
+        * method para saber o que vai fazer, Ex:POST para postar
+        * enctype para fazer downloard do arquivo de mídia
+        * csrf_token para não colocar scripts no formulário-->
+    <!--<h1>Tem certeza que deseja deletar o registro abaixo? </h1>    
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Delete</button>
+     </form>-->
+
+     <!-- ENVIANDO A PESSOA ({{person}})
+        * form para criar um formulário
+        * action para onde enviar aós clicar em salvar (Da Erro no Update)
+        * method para saber o que vai fazer, Ex:POST para postar
+        * enctype para fazer downloard do arquivo de mídia
+        * csrf_token para não colocar scripts no formulário-->
+        <h1>Tem certeza que deseja apagar {{person.first_name}}</h1>
+        <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <button type="submit">Deletar</button>
+    </form>
+</body>
+</html>

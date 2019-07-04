@@ -1,0 +1,5 @@
+/*A pasta estaticos deve está definida em settings em STATICFILES_DIRS 
+Ver descrição no arquivo Obs_estaticos*/ 
+.home{
+    color: red;
+}
